@@ -1,0 +1,18 @@
+.comment {
+  width: fit-content;
+  margin: 8rem auto;
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(128, 255, 128, 0.8);
+  border-radius: 32%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.comment span {
+  margin: 1.6rem 0;
+}

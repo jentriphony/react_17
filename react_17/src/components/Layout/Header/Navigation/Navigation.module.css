@@ -1,0 +1,129 @@
+.navigation {}
+
+.navigation-button {
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 4px 4px rgba(128, 255, 128, 0.8);
+  border: 2px solid white;
+  border-radius: 64%;
+  background-color: rgba(128, 255, 128, 0.2);
+  animation: navigation-button 8s linear infinite;
+  cursor: pointer;
+}
+
+.navigation-button:hover,
+.navigation-button:active {
+  border-radius: 32%;
+}
+
+.navigation ul {
+  position: absolute;
+  width: 16rem;
+  height: 32%;
+  top: 4rem;
+  left: calc(50% - 8rem);
+  padding: 1rem 0;
+  padding-right: 0.8rem;
+  box-shadow: 0 0 4px 4px rgba(128, 128, 128, 0.8);
+  border-top: 4px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+  border-left: 2px solid rgba(128, 255, 128, 0.8);
+  border-right: 2px solid rgba(128, 255, 128, 0.8);
+  border-radius: 16%;
+  background: rgba(128, 128, 128, 1.0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1024;
+  animation: dropdown 8s linear infinite;
+  list-style: none;
+}
+
+.navigation ul li {
+  width: 90%;
+}
+
+.navigation ul li a {
+  width: 100%;
+  margin: 0.4rem;
+  display: block;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(128, 255, 128, 0.8);
+  border-radius: 32%;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a:active {
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
+  border-color:rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 32%;
+  border-top-right-radius: 32%;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.navigation ul li a.active {
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.8);
+  border-color:rgba(128, 255, 128, 0.8);
+  border-bottom-left-radius: 32%;
+  border-top-right-radius: 32%;
+  background: rgba(128, 255, 128, 0.8);
+  color: black;
+}
+
+.navigation ul li a.active:hover,
+.navigation ul li a.active:active {
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
+  border-color:rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+@keyframes navigation-button {
+  25% {
+    border-top-color: black;
+    border-bottom-color: black;
+  }
+  50% {
+    border-left-color: black;
+    border-right-color: black;
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+  75% {
+    border-left-color: white;
+    border-right-color: white;
+    border-color: black;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes dropdown {
+  25% {
+    border-left-color: rgba(255, 255, 255, 0.8);
+    border-right-color:rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    border-left-color: rgba(128, 128, 128, 0.8);
+    border-right-color: rgba(128, 128, 128, 0.8);
+  }
+  75% {
+    border-left-color:rgba(0, 0, 0, 0.8);
+    border-right-color: rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    border-left-color: rgba(128, 255, 128, 0.8);
+    border-right-color: rgba(128, 255, 128, 0.8);
+  }
+}

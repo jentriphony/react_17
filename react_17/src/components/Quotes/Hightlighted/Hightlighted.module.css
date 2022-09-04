@@ -1,0 +1,19 @@
+.highlighted {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 6px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 64%;
+}
+
+.highlighted p {
+  font-size: 2rem;
+}
+
+.highlighted figcaption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.1);
+}

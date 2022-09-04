@@ -1,0 +1,28 @@
+.theme {
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(128, 255, 128, 0.8);
+  border-radius: 64%;
+  background: rgba(0, 0, 0, 0.8);
+  animation: theme 8s linear infinite;
+  cursor: pointer;
+}
+
+.theme:hover,
+.theme:active {
+  border-radius: 32%;
+}
+
+@keyframes theme {
+  50% {
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.8);
+    border-color: white;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.8);
+    border-color: rgba(128, 255, 128, 0.8);
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
